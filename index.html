@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Javascript,Atividades,Logica">
+    <title>Exercícios de lógica em JavaScript</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="coluna">
+            <h2>✧. ┊ ⁭FACCAT</h2>
+            <p> Exercícios da apostila Faccat de lógica - 2007 </p>
+            <button onclick="toggleExerciciosFaccat()">Mostrar / Esconder Exercícios</button>
+
+            <hr>
+
+            <div id="exerciciosFaccat">
+
+                <h3>Soma de Números</h3>
+                <button onclick="soma()"> Clique aqui para calcular! </button>
+
+                <h3>Subtração de Números</h3>
+                <button onclick="subtracao()"> Clique aqui para calcular! </button>
+
+                <h3>Multiplicação de Números</h3>
+                <button onclick="multiplicacao()"> Clique aqui para calcular! </button>
+
+                <h3>Divisão de Números</h3>
+                <button onclick="divisao()"> Clique aqui para calcular! </button>
+
+
+                <hr>
+                <h3>Número Sucessor</h3>
+                <button type="button" onclick="sucessor()"> Clique aqui para descobrir! </button>
+                <h3>Número Antecessor</h3>
+                <button type="button" onclick="antecessor()"> Clique aqui para descobrir! </button>
+
+
+                <hr>
+
+                <h3>Cálculo do Círculo</h3>
+                <button type="button" onclick="calculoCirculo()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Triângulo</h3>
+                <button type="button" onclick="calculoTriangulo()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Quadrado</h3>
+                <button type="button" onclick="calculoQuadrado()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Retângulo</h3>
+                <button type="button" onclick="calculoRetangulo()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Trapézio</h3>
+                <button type="button" onclick="calculoTrapezio()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Hexágono </h3>
+                <button type="button" onclick="calculoHexagono()"> Clique aqui para calcular! </button>
+
+                <h3>Cálculo do Losango</h3>
+                <button type="button" onclick="calculoLosango()"> Clique aqui para calcular! </button>
+
+                <hr>
+
+                <h3>Cálculo da Sua Idade em Dias</h3>
+                <button onclick="idadeDias()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Percentual de Votos</h3>
+                <button onclick="calcularPercentualVotos()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Reajuste Salarial</h3>
+                <button onclick="calcularReajusteSalarial()">CClique aqui para calcular!r</button>
+                <hr>
+                <h3>Custo Final do Carro</h3>
+                <button onclick="calcularCustoFinalCarro()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Salário Final do Vendedor</h3>
+                <button onclick="calcularSalarioFinalVendedor()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Conversão de Fahrenheit para Celsius</h3>
+                <button onclick="fahrenheitParaCelsius()">Converter temperatura</button>
+                <hr>
+                <h3>Média Final do Aluno</h3>
+                <button onclick="calcularMediaFinal()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Verificar se é maior que 10</h3>
+                <button onclick="verificarMaiorQueDez()">Verificar</button>
+                <hr>
+                <h3>Verificar se é positivo ou negativo</h3>
+                <button onclick="verificarPositivoOuNegativo()">Verificar</button>
+                <hr>
+                <h3>Preço das Maçãs</h3>
+                <button onclick="calcularPrecoMacas()">Calcular</button>
+                <hr>
+                <h3>Verificação de Aprovação do Estudante</h3>
+                <button type="button" onclick="verificarAprovacao()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Verificação de Direito ao Voto</h3>
+                <button type="button" onclick="verificarVoto()">Clique aqui para verificar!</button>
+                <hr>
+                <h3>Comparar Dois Números</h3>
+                <button type="button" onclick="mostrarMaiorNumero()">Clique aqui para comparar!</button>
+                <hr>
+                <h3>Ordem Crescente de Dois Números</h3>
+                <button type="button" onclick="ordenarValores()">Clique aqui para ordenar!</button>
+                <hr>
+                <h3>Duração de um Jogo de Xadrez</h3>
+                <button type="button" onclick="calcularDuracaoJogo()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Cálculo de Salário com Horas Extras</h3>
+                <button type="button" onclick="calcularSalario()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Cálculo de Salário com Comissão</h3>
+                <button type="button" onclick="calcularSalarioComissao()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Saldo Bancário do Cliente</h3>
+                <button type="button" onclick="avaliarSaldo()">Verificar saldo</button>
+                <hr>
+                <h3>Controle de Estoque</h3>
+                <button type="button" onclick="verificarEstoque()">Verificar estoque</button>
+                <hr>
+                <h3>Verificar valor</h3>
+                <button type="button" onclick="verificarValor()">Verificar valores</button>
+                <hr>
+                <h3>Maior de 3 valores</h3>
+                <button type="button" onclick="maiorDeTres()">Verificar valores</button>
+                <hr>
+                <h3>Soma dos Dois Maiores Valores</h3>
+                <button type="button" onclick="somaDosDoisMaiores()">Clique para calcular</button>
+                <hr>
+                <h3>Ordem crescente de 3 valores</h3>
+                <button type="button" onclick="ordenarTresValores()">Verificar valores</button>
+                <hr>
+                <h3>Verificar se 3 lados formam um triângulo</h3>
+                <button onclick="verificarTriangulo()">Verficar valores</button>
+                <hr>
+                <h3>Resultado da Partida</h3>
+                <button onclick="resultadoJogo()">Verificar resultado</button>
+                <hr>
+                <h3>Comparar dois números</h3>
+                <button type="button" onclick="compararNumeros()">Verificar valores</button>
+                <hr>
+                <h3>Cálculo de Combustível com Desconto</h3>
+                <button type="button" onclick="calcularCombustivel()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Idades - Cálculos Específicos</h3>
+                <button type="button" onclick="calcularIdades()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Fruteira - Preço Final com Descontos!</h3>
+                <button type="button" onclick="calcularValorFrutas()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Verificação de Acesso</h3>
+                <button type="button" onclick="verificarAcesso()">Acesse sua conta</button>
+                <hr>
+                <h3>Calculadora de Desconto por Quantidade</h3>
+                <button type="button" onclick="calcularTotalComDesconto()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Calculadora de Conceito do Aluno</h3>
+                <button type="button" onclick="calcularConceitoAluno()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Verificador de Aposentadoria</h3>
+                <button type="button" onclick="verificarAposentadoria()">Verificar aposentadoria</button>
+            </div>
+
+        </div>
+
+        <div class="coluna">
+            <h2> ✧. ┊ ⁭MANZANO</h2>
+            <p> Exercícios da apostila Manzano de algoritmo - 2000 </p>
+            <button onclick="toggleExerciciosManzano()"> Mostrar / Esconder Exercícios </button>
+            <hr>
+
+
+            <div id="exerciciosManzano">
+
+                <h3>Conversor de Celsius para Fahrenheit</h3>
+                <button onclick="converterTemperatura()">Converter Temperatura</button>
+                <hr>
+
+                <h3>Cálculo Volume da Lata de Óleo</h3>
+                <button onclick="calcularVolume()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Cálculo Consumo de Combustível</h3>
+                <button onclick="calcularCombustivel()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Troca os Valores de A e B</h3>
+                <button onclick="trocarValores()">Trocar valores</button>
+                <hr>
+
+                <h3>Operações com Propriedade Distributiva</h3>
+                <button onclick="operacoesDistributivas()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Calcular Volume de uma Caixa Retangular</h3>
+                <button onclick="calcularVolumeCaixa()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Quadrado da Diferença de A e B</h3>
+                <button onclick="calcularQuadradoDiferenca()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Conversão de Dólar para Real</h3>
+                <button onclick="converterDolarParaReal()">Converter</button>
+                <hr>
+
+                <h3>Conversão de Real para Dólar</h3>
+                <button onclick="converterRealParaDolar()">Converter</button>
+                <hr>
+                <h3>Soma dos Quadrados de Três Valores</h3>
+                <button onclick="somaQuadrados()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Quadrado da Soma de Três Valores</h3>
+                <button onclick="quadradoDaSoma()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Diferença entre Maior e Menor</h3>
+                <button onclick="calcularDiferenca()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Apresentar Módulo de Número</h3>
+                <button onclick="mostrarModulo()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Média Escolar</h3>
+                <button onclick="calcularMedia()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Média Escolar com Exame</h3>
+                <button onclick="calcularMediaComExame()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Cálculo Raízes da Equação do 2º Grau</h3>
+                <button onclick="calcularRaizes()">Clique aqui para calcular!r</button>
+                <hr>
+
+                <h3>Divisíveis por 2 e 3</h3>
+                <button onclick="verificarDivisibilidade()">Verificar</button>
+                <hr>
+
+                <h3>Identificar Maior e Menor Valor</h3>
+                <button onclick="identificarMaiorEMenor()">Verificar</button>
+                <hr>
+
+                <h3>Verificar Faixa de Valores</h3>
+                <button onclick="verificarFaixa()">Verificar</button>
+                <hr>
+
+                <h3>Verificar Valor</h3>
+                <button onclick="verificarValor()">Verificar</button>
+                <hr>
+
+                <h3>Saudação Personalizada</h3>
+                <button onclick="saudarPessoa()">Saudar</button>
+                <hr>
+
+                <h3>Tabuada</h3>
+                <button onclick="Tabuada()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Soma dos 100 primeiros números</h3>
+                <button onclick="calcularSoma()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Somatório dos números pares de 1 a 500</h3>
+                <button onclick="somarPares500()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Potências de 3 (expoente de 0 a 15)</h3>
+                <button onclick="mostrarPotencias()">Verificar</button>
+                <hr>
+
+                <h3>Listar Números Ímpares de 0 a 20</h3>
+                <button onclick="listarImpares()">Verificar</button>
+                <hr>
+
+                <h3>Calcular Potência</h3>
+                <button onclick="calcularPotencia()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Série de Fibonacci até o 15º termo</h3>
+                <button onclick="mostrarFibonacci()">Verificar</button>
+                <hr>
+
+                <h3>Conversão de Celsius para Fahrenheit (10°C a 100°C)</h3>
+                <button onclick="converterCelsiusParaFahrenheit()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Somatório e Média de 10 Valores</h3>
+                <button onclick="calcularMedia()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Soma e Média dos Valores Pares de 50 a 70</h3>
+                <button onclick="somarPares()">Verificar</button>
+                <hr>
+
+                <h3>Cálculo da Área Total da Residência</h3>
+                <button onclick="calcularArea()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Leitura de Valores Positivos</h3>
+                <button onclick="lerValores()">Verificar</button>
+                <hr>
+
+                <h3>Quadrados de 15 a 200</h3>
+                <button onclick="mostrarQuadrados()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Somatório dos Números Pares</h3>
+                <button onclick="calcularSomatorioPares()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Números Divisíveis por 4 Menores que 200</h3>
+                <button onclick="mostrarDivisiveisPor4()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Cálculo do Número de Grãos de Trigo no Tabuleiro de Xadrez</h3>
+                <button onclick="calcularGraos()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Calcular o Somatório dos Fatoriais</h3>
+                <button onclick="calcularFatoriais()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Somatório e Média dos Valores</h3>
+                <button onclick="calcularSomaMedia()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Calcular Fatorial dos Números Ímpares</h3>
+                <button onclick="calcularFatorial()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Divisão Inteira</h3>
+                <button onclick="divisaoInteira()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Quadrados dos Números de 15 a 200 com laço FOR</h3>
+                <button onclick="calcularQuadrados()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Tabuada de Multiplicar com laço FOR</h3>
+                <button onclick="mostrarTabuada()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Soma dos 100 primeiros números inteiros com laço FOR</h3>
+                <button onclick="calcularSoma()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Somatório dos valores pares entre 1 e 500 com laço FOR</h3>
+                <button onclick="calcularSomaPares()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Valores Ímpares entre 0 e 20 com laço FOR</h3>
+                <button onclick="mostrarImpares()">Verificar</button>
+                <hr>
+
+                <h3>Números Divisíveis com laço FOR</h3>
+                <button onclick="mostrarDivisiveisPor4()">Verificar</button>
+                <hr>
+
+                <h3>Potências de 3 com laço FOR</h3>
+                <button onclick="mostrarPotenciasDeTres()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Potência de uma Base com laço FOR</h3>
+                <button onclick="calcularPotencia()">Clique aqui para calcular!</button>
+                <hr>
+
+                <h3>Série de Fibonacci até o 15º termo com laço FOR</h3>
+                <button onclick="calcularFibonacci()">Verificar</button>
+                <hr>
+
+                <h3>Conversão de Temperatura</h3>
+                <button onclick="conversaoTemperatura()">Converter</button>
+                <hr>
+
+                <h3>Fatorial dos Números Ímpares de 1 a 10</h3>
+                <button onclick="calcularFatorial()">Clique aqui para calcular!</button>
+
+            </div>
+        </div>
+
+        <div class="coluna">
+            <h2>✧. ┊ ⁭OUTROS</h2>
+            <p> Exercícios propostos pelo Professor Jailson </p>
+            <button onclick="toggleExerciciosOutros()">Mostrar / Esconder Exercícios</button>
+            <hr>
+
+            <div id="exerciciosOutros">
+
+                <h3> Dias da Semana</h3>
+                <button onclick="diasemNumeros()">Verificar</button>
+                <hr>
+                <h3>Posição da letra no alfabeto</h3>
+                <button onclick="letrasPosicao()">Verificar</button>
+                <hr>
+                <h3>Exibição dos números de 1 a 10 com laço repita</h3>
+                <button onclick="exibirNumeros()">Verificar</button>
+                <hr>
+                <h3>Contagem regressiva até 0</h3>
+                <button onclick="contagemRegressiva()">Executar</button>
+                <hr>
+                <h3>Soma de números até digitar um número negativo</h3>
+                <button onclick="somarNumeros()">Clique aqui para calcular! </button>
+                <hr>
+                <h3>Exibição dos números pares de 2 a 20</h3>
+                <button onclick="exibirPares()">Verificar</button>
+                <hr>
+                <h3>Cálculo Infinito de Media</h3>
+                <button onclick="calcularMediaNotas()">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Adivinhe o número</h3>
+                <button onclick="adivinharNumero()">Adivinhe</button>
+                <hr>
+                <h3>Contagem das vogais</h3>
+                <button onclick="contarVogais()">Clique aqui para iniciar a contagem!</button>
+                <hr>
+                <h3>Cálculo de Fatorial</h3>
+                <button onclick="calcularFatorial() ">Clique aqui para calcular!</button>
+                <hr>
+                <h3>Verifique a senha</h3>
+                <button onclick="verificarSenha() ">Verificar</button>
+
+            </div>
+        </div>
+
+            <!--JavaScript-->
+
+            <!--Faccat-->
+            <script src="/javascript/faccatJS/script.js"></script>
+            <script src="/javascript/faccatJS/soma.js"></script>
+            <script src="/javascript/faccatJS/subtracao.js"></script>
+            <script src="/javascript/faccatJS/multiplicacao.js"></script>
+            <script src="/javascript/faccatJS/divisao.js"></script>
+            <!--EX 5-->
+            <script src="/javascript/faccatJS/sucessor.js"></script>
+            <script src="/javascript/faccatJS/antecessor.js"></script>
+            <!--EX 6-->
+            <script src="/javascript/faccatJS/circulo.js"></script>
+            <script src="/javascript/faccatJS/triangulo.js"></script>
+            <script src="/javascript/faccatJS/quadrado.js"></script>
+            <script src="/javascript/faccatJS/retangulo.js"></script>
+            <script src="/javascript/faccatJS/trapezio.js"></script>
+            <script src="/javascript/faccatJS/hexagono.js"></script>
+            <script src="/javascript/faccatJS/losango.js"></script>
+            <!--EX 7-->
+            <script src="/javascript/faccatJS/idadeEmDias.js"></script>
+            <!--EX 8-->
+            <script src="/javascript/faccatJS/municipioVotos.js"></script>
+
+            <!--EX 9-->
+            <script src="/javascript/faccatJS/reajusteSal.js"></script>
+            <!--EX 10-->
+            <script src="/javascript/faccatJS/custoCarro.js"></script>
+            <!--EX 11-->
+            <script src="/javascript/faccatJS/salarioVendedor.js"></script>
+            <!--EX 12-->
+            <script src="/javascript/faccatJS/conversorTemperatura.js"></script>
+            <!--EX 13-->
+            <script src="/javascript/faccatJS/mediaFinal.js"></script>
+            <!--EX  14-->
+            <script src="/javascript/faccatJS/maiorQueDez.js"></script>
+            <!--EX 15-->
+            <script src="/javascript/faccatJS/positivoOuNegativo.js"></script>
+            <!--EX 16-->
+            <script src="/javascript/faccatJS/macas.js"></script>
+            <!--EX 17-->
+            <script src="/javascript/faccatJS/aprovacao.js"></script>
+            <!--EX 18-->
+            <script src="/javascript/faccatJS/verificarVoto.js"></script>
+            <!--EX  19-->
+            <script src="/javascript/faccatJS/maiorNumero.js"></script>
+            <!--EX 20 -->
+            <script src="/javascript/faccatJS/ordemCrescente.js"></script>
+            <!--EX 21 -->
+            <script src="/javascript/faccatJS/duracaoJogo.js"></script>
+            <!--EX 22-->
+            <script src="/javascript/faccatJS/salarioComHorasExtras.js"></script>
+            <!--EX 24-->
+            <script src="/javascript/faccatJS/salarioComissao.js"></script>
+            <!--EX 25-->
+            <script src="/javascript/faccatJS/saldoCliente.js"></script>
+            <!--EX 26-->
+            <script src="/javascript/faccatJS/estoque.js"></script>
+            <!--EX 27-->
+            <script src="/javascript/faccatJS/verificarValor.js"></script>
+            <!--EX 28-->
+            <script src="/javascript/faccatJS/maiorDeTres.js"></script>
+            <!--EX 29-->
+            <script src="/javascript/faccatJS/somaDoisMaiores.js"></script>
+            <!--EX 30-->
+            <script src="/javascript/faccatJS/ordenarTres.js"></script>
+            <!--EX 31-->
+            <script src="/javascript/faccatJS/verificarTriangulo.js"></script>
+            <!--EX 32-->
+            <script src="/javascript/faccatJS/verificarVencedor.js"></script>
+            <!--EX 33-->
+            <script src="/javascript/faccatJS/compararNumeros.js"></script>
+            <!--EX 35-->
+            <script src="/javascript/faccatJS/combustivel.js"></script>
+            <!--EX 36-->
+            <script src="/javascript/faccatJS/idades.js"></script>
+            <!--EX 37-->
+            <script src="/javascript/faccatJS/fruteira.js"></script>
+            <!--EX 38-->
+            <script src="/javascript/faccatJS/verificacaoAcesso.js"></script>
+            <!--EX 40-->
+            <script src="/javascript/faccatJS/calculoDescontoProduto.js"></script>
+            <!--EX 41-->
+            <script src="/javascript/faccatJS/conceitoAluno.js"></script>
+            <!--EX 42-->
+            <script src="/javascript/faccatJS/aposentadoria.js"></script>
+
+                <!--Manzano -->
+                <!--Pag 27 -->
+                <!--EX 7a-->
+                <script src="/javascript/manzanoJS/temperatura.js"></script>
+                <!--EX 7c-->
+                <script src="/javascript/manzanoJS/volumeLata.js"></script>
+                <!--EX 7d-->
+                <script src="/javascript/manzanoJS/combustivel.js"></script>
+                <!--EX 7e-->
+                <script src="/javascript/manzanoJS/prestacaoAtraso.js"></script>
+                <!--EX 7f-->
+                <script src="/javascript/manzanoJS/trocarVal.js"></script>
+                <!--EX 7g-->
+                <script src="/javascript/manzanoJS/operacoes.js"></script>
+                <!--EX 7h-->
+                <script src="/javascript/manzanoJS/volumeCaixa.js"></script>
+                <!--EX 7i-->
+                <script src="/javascript/manzanoJS/quadradoDiferenca.js"></script>
+                <!--EX 7j-->
+                <script src="/javascript/manzanoJS/conversaoDolar.js"></script>
+                <!--EX 7k-->
+                <script src="/javascript/manzanoJS/conversaoReal.js"></script>
+                <!--EX 7l-->
+                <script src="/javascript/manzanoJS/somaQuadrado.js"></script>
+                <!--EX 7m-->
+                <script src="/javascript/manzanoJS/quadradoSoma.js"></script>
+                <!--Pag 41 -->
+                <!--EX 4a-->
+                <script src="/javascript/manzanoJS/calculoDiferenca.js"></script>
+                <!--EX 4b-->
+                <script src="/javascript/manzanoJS/modulo.js"></script>
+                <!--EX 4c-->
+                <script src="/javascript/manzanoJS/mediaEscolar.js"></script>
+                <!--EX 4d-->
+                <script src="/javascript/manzanoJS/mediaComExame.js"></script>
+
+                <!--EX 4e-->
+                <script src="/javascript/manzanoJS/raizQuadrada.js"></script>
+                <!--EX 4g-->
+                <script src="/javascript/manzanoJS/divisivelPorDoiseTres.js"></script>
+                <!--EX 4h-->
+                <script src="/javascript/manzanoJS/maiorEMenor.js"></script>
+                <!--EX 4i-->
+                <script src="/javascript/manzanoJS/parOuImpar.js"></script>
+                <!--EX 4j-->
+                <script src="/javascript/manzanoJS/faixaValor.js"></script>
+                <!--EX 4k-->
+                <script src="/javascript/manzanoJS/maiorQueTres.js"></script>
+                <!--EX 4l-->
+                <script src="/javascript/manzanoJS/saudacao.js"></script>
+
+                <!--Pag 46 -->
+                <!--EX 1a-->
+                <script src="/javascript/manzanoJS/tabuada.js"></script>
+                <!--EX 1b-->
+                <script src="/javascript/manzanoJS/somaTotal.js"></script>
+                <!--EX 1c-->
+                <script src="/javascript/manzanoJS/somaPar.js"></script>
+                <!--EX 1d-->
+                <script src="/javascript/manzanoJS/numeroImpares.js"></script>
+                <!--EX 1e-->
+                <script src="/javascript/manzanoJS/potenciasTres.js"></script>
+                <!--EX 1f-->
+                <script src="/javascript/manzanoJS/calculoPotencia.js"></script>
+                <!--EX 1g-->
+                <script src="/javascript/manzanoJS/fibonacci.js"></script>
+                <!--EX 1h-->
+                <script src="/javascript/manzanoJS/celsiusParaFahrentheit.js"></script>
+                <!--EX 1i-->
+                <script src="/javascript/manzanoJS/somatorioMedia.js"></script>
+                <!--EX 1j-->
+                <script src="/javascript/manzanoJS/somatorioMediaFaixa.js"></script>
+                <!--EX 1k-->
+                <script src="/javascript/manzanoJS/residenciaArea.js"></script>
+                <!--EX 1l-->
+                <script src="/javascript/manzanoJS/lerAteNegativo.js"></script>
+                <!--Pag 50 -->
+                <!--EX 1a-->
+                <script src="/javascript/manzanoJS/mostrarQuadrados.js"></script>
+                <!--EX 1b-->
+                <script src="/javascript/manzanoJS/calcSomatorioPares.js"></script>
+                <!--EX 1c-->
+                <script src="/javascript/manzanoJS/divisiveisPorQuatro.js"></script>
+                <!--EX 1d-->
+                <script src="/javascript/manzanoJS/produto.js"></script>
+                <!--EX 1e-->
+                <script src="/javascript/manzanoJS/fatoriais.js"></script>
+                <!--EX 1f-->
+                <script src="/javascript/manzanoJS/calculaMedia.js"></script>
+                <!--EX 1g-->
+                <script src="/javascript/manzanoJS/calculaFatorial.js"></script>
+                <!--EX 1j-->
+                <script src="/javascript/manzanoJS/divisaointeiro.js"></script>
+                <!--Pag 66 -->
+                <!--EX 1a-->
+                <script src="/javascript/manzanoJS/calculaQuadrado.js"></script>
+                <!--EX 1b-->
+                <script src="/javascript/manzanoJS/tabuadaFor.js"></script>
+                <!--EX 1c-->
+                <script src="/javascript/manzanoJS/calculaSomaFor.js"></script>
+                <!--EX 1d-->
+                <script src="/javascript/manzanoJS/calcularParesfor.js"></script>
+                <!--EX 1e-->
+                <script src="/javascript/manzanoJS/imparesfor.js"></script>
+                <!--EX 1f-->
+                <script src="/javascript/manzanoJS/divisivelPorQuatroFor.js"></script>
+                <!--EX 1g-->
+                <script src="/javascript/manzanoJS/potenciaDeTresFor.js"></script>
+                <!--EX 1h-->
+                <script src="/javascript/manzanoJS/calcularPotenciaFor.js"></script>
+                <!--EX 1i-->
+                <script src="/javascript/manzanoJS/fibonacciFor.js"></script>
+                <!--EX 1j-->
+                <script src="/javascript/manzanoJS/conversaoTemperaturaFor.js"></script>
+                <!--EX 1k-->
+                <script src="/javascript/manzanoJS/fatorialFor.js"></script>
+
+                    <!--EX Jailson -->
+                    <!--Dias da semana-->
+                    <script src="/javascript/Jailson/diasSemana.js"></script>
+                    <!--Letra e sua posição no alfabeto-->
+                    <script src="/javascript/Jailson/posicaoLetra.js"></script>
+                    <!--Números de 0 a 10-->
+                    <script src="/javascript/Jailson/deZeroADez.js"></script>
+                    <!--Contagem Regressiva-->
+                    <script src="/javascript/Jailson/contagemRegressiva.js"></script>
+                    <!--Soma ate um número negativo-->
+                    <script src="/javascript/Jailson/somaNegativo.js"></script>
+                    <!--Números Pares-->
+                    <script src="/javascript/Jailson/numPares.js"></script>
+                    <!--Media de notas inseridas-->
+                    <script src="/javascript/Jailson/mediaNota.js"></script>
+                    <!--Adivinhar o número-->
+                    <script src="/javascript/Jailson/numeroSecreto.js"></script>
+                    <!--Contagem de vogais-->
+                    <script src="/javascript/Jailson/contaVogal.js"></script>
+                    <!--Fatorial número-->
+                    <script src="/javascript/Jailson/fatNumero.js"></script>
+                    <!--Senha correta-->
+                    <script src="/javascript/Jailson/senha.js"></script>
+
+</body>
+
+</html>
